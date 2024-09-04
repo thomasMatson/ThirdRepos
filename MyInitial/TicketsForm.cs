@@ -51,6 +51,8 @@ namespace Ticketing
                 { mSection = 2; }
             if (radBox.Checked)
                 { mSection = 3; }
+            if (radBack.Checked)
+                { mSection = 4; }
 
             // Pass the discount amount to the TicketPrice class
             mTicketPrice = new TicketPrice(mSection, mQuantity, mDiscount, discountAmount);
@@ -58,5 +60,10 @@ namespace Ticketing
             mTicketPrice.calculatePrice();
             lblAmount.Text = System.Convert.ToString(mTicketPrice.AmountDue);
         }
-     }
+
+        private void radBalcony_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
