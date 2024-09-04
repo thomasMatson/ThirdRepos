@@ -83,6 +83,7 @@ namespace MyNameSpace
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Size";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // noSizeRadioButton
             // 
@@ -102,9 +103,9 @@ namespace MyNameSpace
             this.twentyOunceRadioButton.AutoSize = true;
             this.twentyOunceRadioButton.Location = new System.Drawing.Point(12, 66);
             this.twentyOunceRadioButton.Name = "twentyOunceRadioButton";
-            this.twentyOunceRadioButton.Size = new System.Drawing.Size(96, 17);
+            this.twentyOunceRadioButton.Size = new System.Drawing.Size(102, 17);
             this.twentyOunceRadioButton.TabIndex = 2;
-            this.twentyOunceRadioButton.Text = "&20 Ounce 4.00";
+            this.twentyOunceRadioButton.Text = "&20 Ounce 16.00";
             this.twentyOunceRadioButton.UseVisualStyleBackColor = true;
             this.twentyOunceRadioButton.CheckedChanged += new System.EventHandler(this.twelveOunceRadioButton_CheckedChanged);
             // 
@@ -113,9 +114,9 @@ namespace MyNameSpace
             this.sixteenOunceRadioButton.AutoSize = true;
             this.sixteenOunceRadioButton.Location = new System.Drawing.Point(12, 43);
             this.sixteenOunceRadioButton.Name = "sixteenOunceRadioButton";
-            this.sixteenOunceRadioButton.Size = new System.Drawing.Size(96, 17);
+            this.sixteenOunceRadioButton.Size = new System.Drawing.Size(102, 17);
             this.sixteenOunceRadioButton.TabIndex = 1;
-            this.sixteenOunceRadioButton.Text = "&16 Ounce 3.50";
+            this.sixteenOunceRadioButton.Text = "&16 Ounce 15.00";
             this.sixteenOunceRadioButton.UseVisualStyleBackColor = true;
             this.sixteenOunceRadioButton.CheckedChanged += new System.EventHandler(this.twelveOunceRadioButton_CheckedChanged);
             // 
@@ -124,9 +125,9 @@ namespace MyNameSpace
             this.twelveOunceRadioButton.AutoSize = true;
             this.twelveOunceRadioButton.Location = new System.Drawing.Point(12, 19);
             this.twelveOunceRadioButton.Name = "twelveOunceRadioButton";
-            this.twelveOunceRadioButton.Size = new System.Drawing.Size(96, 17);
+            this.twelveOunceRadioButton.Size = new System.Drawing.Size(102, 17);
             this.twelveOunceRadioButton.TabIndex = 0;
-            this.twelveOunceRadioButton.Text = "12 &Ounce 3.00";
+            this.twelveOunceRadioButton.Text = "12 &Ounce 14.00";
             this.twelveOunceRadioButton.UseVisualStyleBackColor = true;
             this.twelveOunceRadioButton.CheckedChanged += new System.EventHandler(this.twelveOunceRadioButton_CheckedChanged);
             // 
@@ -199,7 +200,7 @@ namespace MyNameSpace
             // 
             // addToOrderButton
             // 
-            this.addToOrderButton.Location = new System.Drawing.Point(453, 143);
+            this.addToOrderButton.Location = new System.Drawing.Point(453, 142);
             this.addToOrderButton.Name = "addToOrderButton";
             this.addToOrderButton.Size = new System.Drawing.Size(108, 28);
             this.addToOrderButton.TabIndex = 7;
@@ -221,7 +222,7 @@ namespace MyNameSpace
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(401, 102);
+            this.label3.Location = new System.Drawing.Point(401, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 5;
@@ -229,7 +230,7 @@ namespace MyNameSpace
             // 
             // itemPriceTextBox
             // 
-            this.itemPriceTextBox.Location = new System.Drawing.Point(461, 99);
+            this.itemPriceTextBox.Location = new System.Drawing.Point(461, 102);
             this.itemPriceTextBox.Name = "itemPriceTextBox";
             this.itemPriceTextBox.ReadOnly = true;
             this.itemPriceTextBox.Size = new System.Drawing.Size(100, 20);
@@ -255,12 +256,14 @@ namespace MyNameSpace
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(586, 24);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";

@@ -163,15 +163,15 @@ namespace MyNameSpace
             switch (selectedSizeRadioButton.Name)
             {
                 case "twelveOunceRadioButton":
-                    itemSizeDecimal = 3m;
+                    itemSizeDecimal = 14m;
                     drinkOrder[itemCountInteger].sizeString = "12 oz";
                     break;
                 case "sixteenOunceRadioButton":
-                    itemSizeDecimal = 3.5m;
+                    itemSizeDecimal = 15m;
                     drinkOrder[itemCountInteger].sizeString = "16 oz";
                     break;
                 case "twentyOunceRadioButton":
-                    itemSizeDecimal = 4m;
+                    itemSizeDecimal = 16m;
                     drinkOrder[itemCountInteger].sizeString = "20 oz";
                     break;
             }
@@ -203,6 +203,11 @@ namespace MyNameSpace
                 = itemSizeDecimal + findExtrasPrice();
             itemPriceTextBox.Text = drinkOrder[itemCountInteger]
                 .priceDecimal.ToString("C");
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)

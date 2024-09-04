@@ -39,9 +39,10 @@ namespace MyNameSpace
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(181, 149);
+            this.okButton.Location = new System.Drawing.Point(236, 183);
+            this.okButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.Size = new System.Drawing.Size(100, 28);
             this.okButton.TabIndex = 0;
             this.okButton.Text = "&OK";
             this.okButton.UseVisualStyleBackColor = true;
@@ -50,60 +51,66 @@ namespace MyNameSpace
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 47);
+            this.label1.Location = new System.Drawing.Point(68, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(80, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Drinks Sold";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 73);
+            this.label2.Location = new System.Drawing.Point(68, 90);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
+            this.label2.Size = new System.Drawing.Size(122, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Number of Orders";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 99);
+            this.label3.Location = new System.Drawing.Point(68, 122);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
+            this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Total Sales";
             // 
             // drinksSoldTextBox
             // 
-            this.drinksSoldTextBox.Location = new System.Drawing.Point(156, 44);
+            this.drinksSoldTextBox.Location = new System.Drawing.Point(208, 54);
+            this.drinksSoldTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.drinksSoldTextBox.Name = "drinksSoldTextBox";
             this.drinksSoldTextBox.ReadOnly = true;
-            this.drinksSoldTextBox.Size = new System.Drawing.Size(100, 20);
+            this.drinksSoldTextBox.Size = new System.Drawing.Size(132, 22);
             this.drinksSoldTextBox.TabIndex = 4;
             // 
             // numberOrdersTextBox
             // 
-            this.numberOrdersTextBox.Location = new System.Drawing.Point(156, 70);
+            this.numberOrdersTextBox.Location = new System.Drawing.Point(208, 86);
+            this.numberOrdersTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numberOrdersTextBox.Name = "numberOrdersTextBox";
             this.numberOrdersTextBox.ReadOnly = true;
-            this.numberOrdersTextBox.Size = new System.Drawing.Size(100, 20);
+            this.numberOrdersTextBox.Size = new System.Drawing.Size(132, 22);
             this.numberOrdersTextBox.TabIndex = 5;
             // 
             // totalSalesTextBox
             // 
-            this.totalSalesTextBox.Location = new System.Drawing.Point(156, 96);
+            this.totalSalesTextBox.Location = new System.Drawing.Point(208, 118);
+            this.totalSalesTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.totalSalesTextBox.Name = "totalSalesTextBox";
             this.totalSalesTextBox.ReadOnly = true;
-            this.totalSalesTextBox.Size = new System.Drawing.Size(100, 20);
+            this.totalSalesTextBox.Size = new System.Drawing.Size(132, 22);
             this.totalSalesTextBox.TabIndex = 6;
             // 
             // SummaryForm
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 210);
+            this.ClientSize = new System.Drawing.Size(369, 258);
             this.Controls.Add(this.totalSalesTextBox);
             this.Controls.Add(this.numberOrdersTextBox);
             this.Controls.Add(this.drinksSoldTextBox);
@@ -111,6 +118,7 @@ namespace MyNameSpace
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.okButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SummaryForm";
             this.Text = "Juice Bar Sales Summary";
             this.Activated += new System.EventHandler(this.SummaryForm_Activated);
